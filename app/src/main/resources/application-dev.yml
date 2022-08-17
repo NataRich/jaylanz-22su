@@ -1,0 +1,25 @@
+spring:
+  datasource:
+    username: <db_username>
+    password: <db_password>
+    url: <db_url>
+    driver-class-name: com.mysql.cj.jdbc.Driver
+  redis:
+    host: <redis_url>
+    port: 6379
+    password: <redis_password>
+    jedis:
+      pool:
+        max-active: 100
+        max-idle: 100
+        min-idle: 20
+        max-wait: 2000ms
+
+app:
+  cors:
+    origins: <frontend_url>
+    headers: "*"
+    methods: GET, POST, PUT, DELETE
+  jwt:
+    secret: <your_secret_key>
+    expiration: 43200000  # 12 hours
