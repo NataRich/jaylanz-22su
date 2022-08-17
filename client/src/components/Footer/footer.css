@@ -1,0 +1,14 @@
+.footer-wrapper {
+  background-color: var(--black-primary);
+  padding: 40px 0 20px 0;
+}
+
+.footer-navlink {
+  color: var(--white-primary);
+  font-family: var(--font-family);
+  font-size: 1rem;
+}
+
+.footer-navlink:hover {
+  text-decoration: underline;
+}

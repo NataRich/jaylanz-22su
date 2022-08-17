@@ -1,0 +1,45 @@
+.header-wrapper {
+  padding: 20px 0 20px 0;
+}
+
+.header-wrapper-dark {
+  background-color: white;
+}
+
+.header-wrapper-light {
+  background-color: var(--black-primary);
+}
+
+.header-navlink {
+  color: var(--gray-primary);
+  font-family: var(--font-family);
+  font-size: 1.25rem;
+  position: relative;
+  transition: var(--trans-color);
+}
+
+.header-navlink-dark-active,
+.header-navlink-dark:hover {
+  color: var(--black-primary);
+}
+
+.header-navlink-light-active,
+.header-navlink-light:hover {
+  color: var(--white-primary);
+}
+
+.header-navlink::after {
+  content: '';
+  width: 0;
+  height: 3px;
+  left: 0;
+  bottom: -10px;
+  border-radius: 5px;
+  position: absolute;
+  background-color: var(--theme-primary);
+  transition: var(--trans-width);
+}
+
+.header-navlink:hover::after {
+  width: 75%;
+}

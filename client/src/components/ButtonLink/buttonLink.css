@@ -1,0 +1,36 @@
+.buttonlink {
+  width: fit-content;
+  font-family: var(--font-family);
+  font-size: var(--text-size);
+  padding: var(--padding-short);
+  transition: var(--trans-bgcolor), var(--trans-color);
+}
+
+.buttonlink-primary {
+  background-color: var(--theme-primary);
+  color: var(--white-primary);
+}
+
+.buttonlink-primary:hover {
+  background-color: var(--theme-dark);
+}
+
+.buttonlink-default {
+  background-color: white;
+  color: var(--theme-primary);
+  border: var(--solid-border) var(--theme-primary);
+}
+
+.buttonlink-default:hover {
+  background-color: var(--theme-primary);
+  color: var(--white-primary);
+}
+
+.buttonlink-plain {
+  background-color: white;
+  color: var(--theme-primary);
+}
+
+.buttonlink-plain:hover {
+  text-decoration: underline;
+}
